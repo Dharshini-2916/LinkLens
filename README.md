@@ -231,27 +231,73 @@ Backend:  http://localhost:5000
 
 ## 📊 Sample Outputs
 
-### Dashboard
+### URL Shortening
 
-* URL Creation
-* Link Management
-* QR Generation
-* Export Features
+**Original URL**
 
-### Analytics
+```text
+https://www.google.com
+```
 
-* Total Clicks
-* Geolocation Insights
-* Device Statistics
-* Traffic Source Analytics
-* Recent Visit History
-* Click Trend Graphs
+**Generated Short URL**
 
-### Database Entries
+```text
+http://localhost:5000/4oAuRv9
+```
 
-* Users Collection
-* Links Collection
-* Click Analytics Collection
+---
+
+### Dashboard Output
+
+| Field        | Value        |
+| ------------ | ------------ |
+| Short Code   | 4oAuRv9      |
+| Status       | Active       |
+| Clicks       | 1            |
+| Expiry       | Never        |
+| Health Score | 40 - Average |
+
+---
+
+### Analytics Output
+
+| Metric                | Value     |
+| --------------------- | --------- |
+| Total Links           | 1         |
+| Total Clicks          | 1         |
+| Average Clicks / Link | 1.0       |
+| Geo Coverage          | 1 Country |
+| Country               | India     |
+| Device Type           | Desktop   |
+| Traffic Source        | Direct    |
+
+---
+
+### Recent Visit Record
+
+```text
+Time: Jun 13, 20:18
+Short URL: /4oAuRv9
+Location: Mumbai, India
+Device: Desktop
+Referrer: Direct
+```
+
+---
+
+### Database Records Stored
+
+The application stores:
+
+* User Information
+* Shortened URLs
+* Click Analytics
+* Visit History
+* Device Information
+* Geolocation Data
+
+in MongoDB Atlas collections.
+
 
 ---
 
